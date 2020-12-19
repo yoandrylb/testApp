@@ -1,0 +1,29 @@
+<ion-content>
+
+    <div id="header">
+        <img src="assets/images/logo.png"/>
+        <h1>Login</h1>
+    </div>
+
+    <form id="form" [formGroup]="loginForm" (ngSubmit)="OnSubmit()">
+        <ion-list class="simple-input">
+            <ion-item>
+                <ion-icon name="person-outline" size="small"></ion-icon>
+                <ion-input type="email" formControlName="email" placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="lock-closed-outline" size="small"></ion-icon>
+                <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button type="submit" color="primary" expand="block" [disabled]="!loginForm.valid">Continue</ion-button>
+
+        <ion-text>
+            <p>Don't have an account yet?
+                <ion-text color="primary" (click)="register()">
+                    sign up
+                </ion-text>
+            </p>
+        </ion-text>
+    </form>
+</ion-content>

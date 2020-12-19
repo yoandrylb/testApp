@@ -1,0 +1,32 @@
+<ion-header class="ion-no-border" translucent="">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login" text="" icon="close-outline">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="">
+  <h1>Create your<br />Account</h1>
+
+  <form id="form" [formGroup]="registerForm" (ngSubmit)="OnSubmit()">
+    <ion-list class="simple-input">
+      <ion-item>
+        <ion-icon name="person-outline" size="small"></ion-icon>
+        <ion-input type="text" formControlName="name" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail-outline" size="small"></ion-icon>
+        <ion-input type="email" formControlName="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed-outline" size="small"></ion-icon>
+        <ion-input type="password" formControlName="password" placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" color="primary" expand="block">Join Us</ion-button>
+  </form>
+
+  <p>By pressing 'Join Us' you agree to <br />our terms & conditions.</p>
+</ion-content>

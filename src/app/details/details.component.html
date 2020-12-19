@@ -1,0 +1,112 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="close()" shape="round">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+    <ion-grid >
+        <ion-row >
+            <ion-col style="vertical-align: middle;width: 50%;"><code>MRZ</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">
+                <p style="word-break: break-all;">{{verification.MRZ}}</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Document type</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.document_type}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Country</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.country}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Last name</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.last_name}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>First name</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.first_name}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Document no</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.document_no}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Document checknumber</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.document_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Correct document checknumber</code></ion-col>
+            <ion-col
+                    style="vertical-align: middle;width: 50%;">{{verification.correct_document_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Nationality</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.nationality}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Date of birth</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.date_of_birth}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Birth checknumber</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.birth_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Correct birth checknumber</code></ion-col>
+            <ion-col
+                    style="vertical-align: middle;width: 50%;">{{verification.correct_birth_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Sex</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.sex}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Date of expiry</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.date_of_expiry}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Expiry checknumber </code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.expiry_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Correct expiry checknumber</code></ion-col>
+            <ion-col
+                    style="vertical-align: middle;width: 50%;">{{verification.correct_expiry_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Other id</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.other_id}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Other id checknumber</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.other_id_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Second row checknumber</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.second_row_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Correct second row checknumber</code></ion-col>
+            <ion-col
+                    style="vertical-align: middle;width: 50%;">{{verification.correct_second_row_checknumber}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Flag</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.flag}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Result</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.result}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="vertical-align: middle;width: 50%;"><code>Details</code></ion-col>
+            <ion-col style="vertical-align: middle;width: 50%;">{{verification.details}}</ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
