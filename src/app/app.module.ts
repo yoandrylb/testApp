@@ -8,12 +8,6 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-import {AngularFireModule} from '@angular/fire';
-import {environment} from '../environments/environment';
-import {AngularFireStorageModule} from '@angular/fire/storage';
-import {AngularFireAuthModule} from '@angular/fire/auth';
-import {AngularFireDatabaseModule} from '@angular/fire/database';
-import {HTTP} from '@ionic-native/http/ngx';
 import {HttpClientModule} from '@angular/common/http';
 import {NativeStorage} from '@ionic-native/native-storage/ngx';
 

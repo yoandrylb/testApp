@@ -122,6 +122,7 @@ export class HomePage {
                                 if (res.Status === 'Success') {
                                     if (option === 1) {
                                         this.user.frontId = res.data.MRZdata;
+                                        this.profileImg = (this.sanitizer.bypassSecurityTrustResourceUrl(this.user.frontId.face_image) as any).changingThisBreaksApplicationSecurity;
                                         this.user.frontImg = 'data:image/jpg;base64,' + fileUri.base64String;
                                     } else {
                                         this.user.backImg = 'data:image/jpg;base64,' + fileUri.base64String;
